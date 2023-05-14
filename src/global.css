@@ -6,51 +6,41 @@
  *
  */
 
-:root {
-  --qwik-dark-blue: #006ce9;
-  --qwik-light-blue: #18b6f6;
-  --qwik-light-purple: #ac7ff4;
-  --qwik-dark-purple: #713fc2;
-  --qwik-dirty-black: #1d2033;
-  --qwik-dark-background: #151934;
-  --qwik-dark-text: #ffffff;
-}
+/* Reset CSS */
 
-html {
-  line-height: 1;
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  line-height: inherit;
 }
 
-/**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles. No matter which components are in the page or matching route,
- * the styles in here will be applied to the Document, without any sort of CSS scoping.
- *
- */
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+/* Custom properties */
+:root {
+  /* Fonts family */
+  --family: "Poppins", sans-serif;
+  --medium: 500;
+  --bold: 700;
+
+  /* Colors */
+
+  /* Primary */
+  --cyan: hsl(180, 66%, 49%);
+  --dark_violet: hsl(257, 27%, 26%);
+
+  /* Secondary */
+  --red: hsl(0, 87%, 67%);
+
+  /* Neutral */
+
+  --gray: hsl(0, 0%, 75%);
+  --grayish_violet: hsl(257, 7%, 63%);
+  --very_dark_blue: hsl(255, 11%, 22%);
+  --very_dark_violet: hsl(260, 8%, 14%);
+  --white: hsl(255, 255%, 255%);
+  --white_2: hsl(230, 25%, 95%);
 }
 
 body {
-  padding: 0;
-  line-height: inherit;
+  font-family: var(--family);
+  font-size: 18px;
 }
