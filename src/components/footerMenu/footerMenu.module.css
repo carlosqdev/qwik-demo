@@ -1,0 +1,44 @@
+.footer_menu {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+
+.footer_menu a {
+  color: var(--white);
+  font-family: var(--family);
+  font-size: 18px;
+  font-weight: var(--bold);
+  text-decoration: none;
+}
+
+.footer_sub_menu {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.footer_sub_menu a {
+  font-weight: var(--medium);
+  font-size: 17px;
+  color: var(--grayish_violet);
+}
+
+.footer_sub_menu a:hover {
+  color: var(--cyan);
+  transition: 0.3s all ease-in;
+}
+
+@media screen and (min-width: 64rem) {
+  .footer_menu {
+    grid-template-rows: 40px 1fr;
+    justify-items: normal;
+  }
+
+  .footer_sub_menu {
+    justify-items: normal;
+    height: fit-content;
+    gap: 10px;
+  }
+}
